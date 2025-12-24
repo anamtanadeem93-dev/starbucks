@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Starbucks</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Logo and join button */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header .join-btn {
+    background-color: rgb(48, 121, 48);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Beige section */
+.beige {
+    width: 100%;
+    background: rgb(233, 233, 171);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.box {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+
+/* Big text behind */
+.box p {
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(48, 121, 48);
+    margin: 0;
+    flex: 1 1 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Product image */
+.img1 {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+    z-index: 2;
+    flex: 1 1 400px;
+}
+
+/* Text content */
+.box h1 {
+    color: rgb(48, 121, 48);
+    font-size: 40px;
+    margin: 10px 0;
+    flex: 1 1 300px;
+}
+
+.graph {
+    color: black;
+    font-size: 16px;
+    flex: 1 1 400px;
+}
+
+/* Buttons */
+.button2, .button3 {
+    margin: 10px 5px 0 0;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: beige;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.button3 {
+    background-color: rgb(48, 121, 48);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+/* Rating and labels */
+h4, .h1s {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .img1 {
+        order: -1; /* show image above text on smaller screens */
+    }
+    .graph {
+        font-size: 14px;
+    }
+    .button3 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .box p {
+        font-size: 50px;
+    }
+    .graph {
+        font-size: 12px;
+    }
+    header img {
+        width: 80px;
+    }
+    .button2 {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Gifts</a>
+        <a href="">Orders</a>
+    </nav>
+    <img src="starbucks_logo.png" alt="Starbucks Logo">
+    <button class="join-btn">JOIN NOW</button>
+</header>
+
+<div class="beige">
+    <div class="box">
+        <p>STARBUCKS</p>
+        <img src="starbucks1.jpg" alt="Coffee" class="img1">
+        <h1>$10.00</h1>
+        <h1 class="graph">STARBUCKS ARE A CLASSIC CHOICE FOR MANY COFFEE LOVERS, THEY'RE MADE BY COMBINING ESPRESSO WITH STEAMED MILK AND A SMALL AMOUNT OF FOAM ON TOP.</h1>
+        <button class="button2">ORDER NOW</button>
+        <button class="button3">></button>
+        <h4>NEW OATMILK LATTE</h4>
+        <h4 class="h4s">oatmilk on ice</h4>
+        <h1 class="h1s">4.6</h1><h4 class="h4ss">Stars</h4>
+    </div>
+</div>
+
+</body>
+</html>
